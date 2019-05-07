@@ -71,6 +71,7 @@ Partial Class frmMain
         Me.lblGameInfoTitle = New System.Windows.Forms.Label()
         Me.pnlMainWrapper = New System.Windows.Forms.Panel()
         Me.pnlGameListPanel = New System.Windows.Forms.Panel()
+        Me.lblNoGamesFound = New System.Windows.Forms.Label()
         Me.pnlTaskBar.SuspendLayout()
         Me.pnlSearchTop.SuspendLayout()
         Me.pnlSearchBottom.SuspendLayout()
@@ -83,6 +84,7 @@ Partial Class frmMain
         Me.pnlSearchBar.SuspendLayout()
         Me.pnlScroll.SuspendLayout()
         Me.pnlMain.SuspendLayout()
+        Me.pnlMainContent.SuspendLayout()
         Me.pnlGameInfo.SuspendLayout()
         Me.pnlGameInfoRating.SuspendLayout()
         Me.pnlGameInfoDesc.SuspendLayout()
@@ -527,6 +529,7 @@ Partial Class frmMain
         '
         'pnlMainContent
         '
+        Me.pnlMainContent.Controls.Add(Me.lblNoGamesFound)
         Me.pnlMainContent.Location = New System.Drawing.Point(0, 0)
         Me.pnlMainContent.Name = "pnlMainContent"
         Me.pnlMainContent.Size = New System.Drawing.Size(768, 410)
@@ -728,6 +731,18 @@ Partial Class frmMain
         Me.pnlGameListPanel.Size = New System.Drawing.Size(800, 560)
         Me.pnlGameListPanel.TabIndex = 8
         '
+        'lblNoGamesFound
+        '
+        Me.lblNoGamesFound.AutoSize = True
+        Me.lblNoGamesFound.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblNoGamesFound.Font = New System.Drawing.Font("Tw Cen MT", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNoGamesFound.ForeColor = System.Drawing.Color.White
+        Me.lblNoGamesFound.Location = New System.Drawing.Point(302, 182)
+        Me.lblNoGamesFound.Name = "lblNoGamesFound"
+        Me.lblNoGamesFound.Size = New System.Drawing.Size(214, 34)
+        Me.lblNoGamesFound.TabIndex = 5
+        Me.lblNoGamesFound.Text = "No games found!"
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -755,6 +770,8 @@ Partial Class frmMain
         Me.pnlSearchBar.PerformLayout()
         Me.pnlScroll.ResumeLayout(False)
         Me.pnlMain.ResumeLayout(False)
+        Me.pnlMainContent.ResumeLayout(False)
+        Me.pnlMainContent.PerformLayout()
         Me.pnlGameInfo.ResumeLayout(False)
         Me.pnlGameInfo.PerformLayout()
         Me.pnlGameInfoRating.ResumeLayout(False)
@@ -815,4 +832,5 @@ Partial Class frmMain
     Friend WithEvents txtSearch As TextBox
     Private WithEvents btnOption As Button
     Private WithEvents btnRefresh As Button
+    Friend WithEvents lblNoGamesFound As Label
 End Class

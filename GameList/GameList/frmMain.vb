@@ -228,11 +228,20 @@ Public Class frmMain
                 sqlcmd.Connection = conn
                 sqlcmd.CommandText = "SELECT * FROM Game ORDER BY gameName ASC"
                 Dim rs As OleDb.OleDbDataReader = sqlcmd.ExecuteReader
+                Dim games As Boolean = False
                 While rs.Read
+                    games = True
                     Dim newString As String = rs("gameName")
                     Dim gameID As Integer = rs("gameID")
                     addGame(newString, False, gameID)
                 End While
+                If Not games Then
+                    lblNoGamesFound.Show()
+                    pnlSearchTop.Enabled = False
+                Else
+                    lblNoGamesFound.Hide()
+                    pnlSearchTop.Enabled = True
+                End If
             Else
                 Debug.Print("ERROR - DB NOT FOUND")
             End If

@@ -30,3 +30,5 @@ C:\Users\Martin\Documents\GitHub\GameCollection\GameList\GameList\obj\Debug\Game
 C:\Users\Martin\Documents\GitHub\GameCollection\GameList\GameList\bin\Debug\GameList.exe
 C:\Users\Martin\Documents\GitHub\GameCollection\GameList\GameList\bin\Debug\GameList.pdb
 C:\Users\Martin\Documents\GitHub\GameCollection\GameList\GameList\bin\Debug\GameList.xml
+C:\Users\Martin\Documents\GitHub\GameCollection\GameList\GameList\obj\Debug\Interop.ADOX.dll
+C:\Users\Martin\Documents\GitHub\GameCollection\GameList\GameList\obj\Debug\GameCollection.vbproj.ResolveComReference.cache

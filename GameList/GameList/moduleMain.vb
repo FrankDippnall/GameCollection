@@ -1,7 +1,7 @@
 ﻿Imports GameList.Palette
 
 Module moduleMain
-    Private FileLocation As String = "data/GameCollection.mdb"
+    Private FileLocation As String = "GameCollection.mdb"
     Public Function ConnectToDB() As OleDb.OleDbConnection
         'Instantiates an OleDB connection to the InsuranceCompanyDB.mbd file.
         'Returns an open OleDBConnection object for use with SQL statements.
@@ -194,19 +194,21 @@ Module moduleMain
 
                 Case 3
                     frmSplash.pass("Accessing Database")
-                    For currentSubJob = 1 To 2
+                    For currentSubJob = 1 To 3
                         Select Case currentSubJob
                             Case 1 'check db exists
                                 frmSplash.passSub("checking if database exists")
                                 If checkDBExists() Then
                                     Exit For
-                                Else
-
                                 End If
                             Case 2
                                 frmSplash.passSub("creating database")
-
+                                'create new db
+                                CreateDatabase()
                             Case 3
+                                'initialise database
+                                frmSplash.passSub("initialising database")
+                                InitialiseDatabase()
                         End Select
                         Application.DoEvents()
                     Next
@@ -218,6 +220,35 @@ Module moduleMain
         frmSplash.pass("Finished!", True)
         Threading.Thread.Sleep(200)
 
+    End Sub
+    Sub CreateDatabase()
+        On Error GoTo CreateDatabaseError
+
+        Dim cat As New ADOX.Catalog
+        cat.Create("Provider='Microsoft.Jet.OLEDB.4.0';Data Source='" & FileLocation & "'")
+
+
+        'Clean up  
+        cat = Nothing
+        Exit Sub
+
+CreateDatabaseError:
+        cat = Nothing
+        Debug.Print("Oops! something went wrong while creating the database.")
+    End Sub
+    Sub InitialiseDatabase()
+        Using conn As OleDb.OleDbConnection = ConnectToDB()
+            If conn.ConnectionString.Length > 0 Then
+                Dim sqlcmd As New OleDb.OleDbCommand
+                sqlcmd.Connection = conn
+                sqlcmd.CommandText = "CREATE TABLE Game (gameID AUTOINCREMENT PRIMARY KEY, gameName VARCHAR(255), gameGenres LONGTEXT, gameLink VARCHAR(255), gamePlatformIDs VARCHAR(255), userPlayed BIT, userRating NUMBER, userComment LONGTEXT, userCommentDate DATE)"
+                sqlcmd.ExecuteNonQuery()
+
+            Else
+                Debug.Print("ERROR - DB NOT FOUND")
+            End If
+
+        End Using
     End Sub
     Public Sub Main()
         mainInitialiseSequence()

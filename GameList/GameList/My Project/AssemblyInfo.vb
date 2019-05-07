@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("Library used to store video games played")>
 <Assembly: AssemblyCompany("Shatterproof Inc.")>
 <Assembly: AssemblyProduct("GameList")>
-<Assembly: AssemblyCopyright("Copyright ©  2018")>
+<Assembly: AssemblyCopyright("Copyright ©Shatterproof  2018")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
