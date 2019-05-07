@@ -1,0 +1,32 @@
+C:\Users\Martin\Documents\Visual Studio 2015\Projects\GameList\GameList\bin\Debug\GameList.exe.config
+C:\Users\Martin\Documents\Visual Studio 2015\Projects\GameList\GameList\obj\Debug\GameList.exe
+C:\Users\Martin\Documents\Visual Studio 2015\Projects\GameList\GameList\obj\Debug\GameList.xml
+C:\Users\Martin\Documents\Visual Studio 2015\Projects\GameList\GameList\obj\Debug\GameList.pdb
+C:\Users\Martin\Documents\Visual Studio 2015\Projects\GameList\GameList\bin\Debug\GameList.exe
+C:\Users\Martin\Documents\Visual Studio 2015\Projects\GameList\GameList\bin\Debug\GameList.pdb
+C:\Users\Martin\Documents\Visual Studio 2015\Projects\GameList\GameList\bin\Debug\GameList.xml
+C:\Users\Martin\Documents\Visual Studio 2015\Projects\GameList\GameList\obj\Debug\GameCollection.vbprojResolveAssemblyReference.cache
+C:\Users\Martin\Documents\Visual Studio 2015\Projects\GameList\GameList\obj\Debug\GameList.frmGameEditDialog.resources
+C:\Users\Martin\Documents\Visual Studio 2015\Projects\GameList\GameList\obj\Debug\GameList.frmPreferences.resources
+C:\Users\Martin\Documents\Visual Studio 2015\Projects\GameList\GameList\obj\Debug\GameList.frmConfirmationDialog.resources
+C:\Users\Martin\Documents\Visual Studio 2015\Projects\GameList\GameList\obj\Debug\GameList.frmDebug.resources
+C:\Users\Martin\Documents\Visual Studio 2015\Projects\GameList\GameList\obj\Debug\GameList.frmMain.resources
+C:\Users\Martin\Documents\Visual Studio 2015\Projects\GameList\GameList\obj\Debug\GameList.frmSplash.resources
+C:\Users\Martin\Documents\Visual Studio 2015\Projects\GameList\GameList\obj\Debug\GameList.Resources.resources
+C:\Users\Martin\Documents\Visual Studio 2015\Projects\GameList\GameList\obj\Debug\GameCollection.vbproj.GenerateResource.Cache
+C:\Users\Martin\Documents\GitHub\GameCollection\GameList\GameList\bin\Debug\GameList.exe.config
+C:\Users\Martin\Documents\GitHub\GameCollection\GameList\GameList\obj\Debug\GameList.exe
+C:\Users\Martin\Documents\GitHub\GameCollection\GameList\GameList\obj\Debug\GameList.xml
+C:\Users\Martin\Documents\GitHub\GameCollection\GameList\GameList\obj\Debug\GameList.pdb
+C:\Users\Martin\Documents\GitHub\GameCollection\GameList\GameList\obj\Debug\GameCollection.vbprojResolveAssemblyReference.cache
+C:\Users\Martin\Documents\GitHub\GameCollection\GameList\GameList\obj\Debug\GameList.frmGameEditDialog.resources
+C:\Users\Martin\Documents\GitHub\GameCollection\GameList\GameList\obj\Debug\GameList.frmPreferences.resources
+C:\Users\Martin\Documents\GitHub\GameCollection\GameList\GameList\obj\Debug\GameList.frmConfirmationDialog.resources
+C:\Users\Martin\Documents\GitHub\GameCollection\GameList\GameList\obj\Debug\GameList.frmDebug.resources
+C:\Users\Martin\Documents\GitHub\GameCollection\GameList\GameList\obj\Debug\GameList.frmMain.resources
+C:\Users\Martin\Documents\GitHub\GameCollection\GameList\GameList\obj\Debug\GameList.frmSplash.resources
+C:\Users\Martin\Documents\GitHub\GameCollection\GameList\GameList\obj\Debug\GameList.Resources.resources
+C:\Users\Martin\Documents\GitHub\GameCollection\GameList\GameList\obj\Debug\GameCollection.vbproj.GenerateResource.Cache
+C:\Users\Martin\Documents\GitHub\GameCollection\GameList\GameList\bin\Debug\GameList.exe
+C:\Users\Martin\Documents\GitHub\GameCollection\GameList\GameList\bin\Debug\GameList.pdb
+C:\Users\Martin\Documents\GitHub\GameCollection\GameList\GameList\bin\Debug\GameList.xml
